@@ -1,7 +1,3 @@
-Control.data = {
-    infoText: "bblaze control 1.4 template for integrating control, max4live, arduino and midi hardware",
-};
-
 
 	var cssCode = " .button, .slider_stroke, .slider { border-width:10px; } .widget{ opacity: 0.8} #selectedInterface { background: url(http://www.deviantart.com/download/144678141/Green_Techno_Abstract_Wallpape_by_obreakdanceo.jpg)} ";
 	var styleElement = document.createElement("style");
@@ -9,6 +5,10 @@ Control.data = {
 	styleElement.appendChild(document.createTextNode(cssCode));
 	document.getElementsByTagName("head")[0].appendChild(styleElement);
 
+Control.data = {
+    infoText: "bblaze control 1.4 template for integrating control, max4live, arduino and midi hardware",
+};
+	
 Control.interface = {
     name: "Billie Blaze",
     orientation: "landscape",
@@ -23,7 +23,7 @@ Control.interface = {
 "height" : .8,
 "startingValue" : 0,
 "min" : 0,
-"max" : 1,
+"max" : 127,
 "isInverted" : false,
 "isVertical" : true,
 "protocol" : "OSC",
@@ -42,11 +42,11 @@ Control.interface = {
 "height" : .8,
 "startingValue" : 0,
 "min" : 0,
-"max" : 1,
+"max" : 127,
 "isInverted" : false,
 "isVertical" : true,
 "protocol" : "OSC",
-"address" : "/Master",
+"address" : "/et/cutoff/1",
 "strokeColor" : "#E6EEF9",
 "fillColor" : "#3D6FAA",
 "backgroundColor": "#35363B",
@@ -92,6 +92,7 @@ Control.interface = {
 "name" : "chVol",
 "type" : "MultiSlider",
 "numberOfSliders" : 9,
+"address": "/et/vol",
 "x" : .0,
 "y" : .0,
 "width" : .6,
