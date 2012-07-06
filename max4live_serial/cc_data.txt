@@ -1,0 +1,9 @@
+/fx1/type, 12;
+/fx1/edit1, 92;
+/fx1/edit2, 93;
+/fx2/type, 13;
+/fx2/edit1, 94;
+/fx2/edit2, 95;
+/fx3/type, 24;
+/fx3/edit1, 25;
+/fx3/edit2, 26;

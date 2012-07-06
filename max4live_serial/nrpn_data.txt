@@ -1,7 +1,7 @@
 /pitch/1, 1540;
 /pan/1, 1547;
 /eg/1, 1548;
-/level/1,1546;
+/level/1, 1546;
 /start/1, 1545;
 /cutoff/1, 1542;
 /resonance/1, 1543;
@@ -16,6 +16,7 @@
 /reverse/1, 1551;
 /fxselect/1, 1553;
 /fxsend/1, 1552;
+
 /pitch/2, 1572;
 /pan/2, 1579;
 /eg/2, 1580;
@@ -34,3 +35,144 @@
 /reverse/2, 1583;
 /fxselect/2, 1585;
 /fxsend/2, 1584;
+
+
+/pitch/3, 1604;
+/pan/3, 1611;
+/eg/3, 1612;
+/level/3, 1610;
+/start/3, 1609;
+/cutoff/3, 1606;
+/resonance/3, 1607;
+/egint/3, 1608;
+/lfospeed/3, 1620;
+/lfodepth/3, 1619;
+/lfotype/3, 1618;
+/lfosync/3, 1622;
+/lfodest/3, 1621;
+/ampeg/3, 1613;
+/roll/3, 1614;
+/reverse/3, 1615;
+/fxselect/3, 1617;
+/fxsend/3, 1616;
+
+
+/pitch/4, 1636;
+/pan/4, 1643;
+/eg/4, 1644;
+/level/4, 1642;
+/start/4, 1641;
+/cutoff/4, 1638;
+/resonance/4, 1639;
+/egint/4, 1640;
+/lfospeed/4, 1652;
+/lfodepth/4, 1651;
+/lfotype/4, 1650;
+/lfosync/4, 1654;
+/lfodest/4, 1653;
+/ampeg/4, 1645;
+/roll/4, 1646;
+/reverse/4, 1647;
+/fxselect/4, 1649;
+/fxsend/4, 1648;
+
+
+/pitch/5, 1668;
+/pan/5, 1675;
+/eg/5, 1676;
+/level/5, 1674;
+/start/5, 1673;
+/cutoff/5, 1670;
+/resonance/5, 1671;
+/egint/5, 1672;
+/lfospeed/5, 1684;
+/lfodepth/5, 1683;
+/lfotype/5, 1682;
+/lfosync/5, 1686;
+/lfodest/5, 1685;
+/ampeg/5, 1677;
+/roll/5, 1678;
+/reverse/5, 1679;
+/fxselect/5, 1681;
+/fxsend/5, 1680;
+
+
+/pitch/6, 1700;
+/pan/6, 1707;
+/eg/6, 1708;
+/level/6, 1706;
+/start/6, 1705;
+/cutoff/6, 1702;
+/resonance/6, 1703;
+/egint/6, 1704;
+/lfospeed/6, 1716;
+/lfodepth/6, 1715;
+/lfotype/6, 1714;
+/lfosync/6, 1718;
+/lfodest/6, 1717;
+/ampeg/6, 1709;
+/roll/6, 1710;
+/reverse/6, 1711;
+/fxselect/6, 1713;
+/fxsend/6, 1712;
+
+
+/pitch/7, 1732;
+/pan/7, 1739;
+/eg/7, 1740;
+/level/7, 1738;
+/start/7, 1737;
+/cutoff/7, 1734;
+/resonance/7, 1735;
+/egint/7, 1736;
+/lfospeed/7, 1748;
+/lfodepth/7, 1747;
+/lfotype/7, 1746;
+/lfosync/7, 1750;
+/lfodest/7, 1749;
+/ampeg/7, 1741;
+/roll/7, 1742;
+/reverse/7, 1743;
+/fxselect/7, 1745;
+/fxsend/7, 1744;
+
+
+/pitch/8, 1764;
+/pan/8, 1771;
+/eg/8, 1772;
+/level/8, 1770;
+/start/8, 1769;
+/cutoff/8, 1766;
+/resonance/8, 1767;
+/egint/8, 1768;
+/lfospeed/8, 1780;
+/lfodepth/8, 1779;
+/lfotype/8, 1778;
+/lfosync/8, 1782;
+/lfodest/8, 1781;
+/ampeg/8, 1773;
+/roll/8, 1774;
+/reverse/8, 1775;
+/fxselect/8, 1777;
+/fxsend/8, 1776;
+
+
+/pitch/9, 1796;
+/pan/9, 1803;
+/eg/9, 1804;
+/level/9, 1802;
+/start/9, 1801;
+/cutoff/9, 1798;
+/resonance/9, 1799;
+/egint/9, 1800;
+/lfospeed/9, 1812;
+/lfodepth/9, 1811;
+/lfotype/9, 1810;
+/lfosync/9, 1814;
+/lfodest/9, 1813;
+/ampeg/9, 1805;
+/roll/9, 1806;
+/reverse/9, 1807;
+/fxselect/9, 1809;
+/fxsend/9, 1808;
+
