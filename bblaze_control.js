@@ -540,7 +540,8 @@ Control.interface = {
 "address": "/virus/vol/1",
 "type" : "Slider",
 "x" : .0,
-"y" : 0,
+"y" : 0,"min": 0,
+"max": 127,
 "width" : .08,
 "height" : 0.825,
 "label": "Bass Vol"
@@ -551,7 +552,8 @@ Control.interface = {
 	"address": "/virus/cutoff/1",
 	"type" : "Slider",
 	"x" : .1,
-	"y" : 0,
+	"y" : 0,"min": 0,
+	"max": 127,
 	"width" : .075,
 	"height" : 0.25,
 	"label": "Bass Cutoff"
@@ -561,7 +563,8 @@ Control.interface = {
 		"address": "/virus/reso/1",
 		"type" : "Slider",
 		"x" : .1,
-		"y" : .275,
+		"y" : .275,"min": 0,
+		"max": 127,
 		"width" : .075,
 		"height" : 0.25,
 		"label": "Bass Reso"
@@ -571,7 +574,8 @@ Control.interface = {
 			"address": "/virus/release/1",
 			"type" : "Slider",
 			"x" : .1,
-			"y" : .575,
+			"y" : .575,"min": 0,
+			"max": 127,
 			"width" : .075,
 			"height" : 0.25,
 			"label": "Bass Release"
@@ -582,7 +586,8 @@ Control.interface = {
 			"address": "/virus/vol/2",
 			"type" : "Slider",
 			"x" : .2,
-			"y" : 0,
+			"y" : 0,"min": 0,
+			"max": 127,
 			"width" : .08,
 			"height" : 0.825,
 			"label": "Synth1 Vol"
@@ -595,7 +600,8 @@ Control.interface = {
 				"x" : .3,
 				"y" : 0,
 				"width" : .075,
-				"height" : 0.25,
+				"height" : 0.25,"min": 0,
+				"max": 127,
 				"label": "Synth1 Cutoff"
 			},
 				{
@@ -605,7 +611,8 @@ Control.interface = {
 					"x" : .3,
 					"y" : .275,
 					"width" : .075,
-					"height" : 0.25,
+					"height" : 0.25,"min": 0,
+					"max": 127,
 					"label": "Synth1 Reso"
 					},
 					{
@@ -627,7 +634,8 @@ Control.interface = {
 						"x" : .4,
 						"y" : 0,
 						"width" : .08,
-						"height" : 0.825,
+						"height" : 0.825,"min": 0,
+						"max": 127,
 						"label": "Synth2 Vol"
 						},
 
@@ -638,7 +646,8 @@ Control.interface = {
 							"x" : .5,
 							"y" : 0,
 							"width" : .075,
-							"height" : 0.25,
+							"height" : 0.25,"min": 0,
+							"max": 127,
 							"label": "Synth2 Cutoff"
 						},
 							{
@@ -648,7 +657,8 @@ Control.interface = {
 								"x" : .5,
 								"y" : .275,
 								"width" : .075,
-								"height" : 0.25,
+								"height" : 0.25,"min": 0,
+								"max": 127,
 								"label": "Synth2 Reso"
 								},
 								{
@@ -658,7 +668,8 @@ Control.interface = {
 									"x" : .5,
 									"y" : .575,
 									"width" : .075,
-									"height" : 0.25,
+									"height" : 0.25,"min": 0,
+									"max": 127,
 									"label": "Synth2 Release"
 									},
 									
@@ -670,7 +681,8 @@ Control.interface = {
 									"x" : .6,
 									"y" : 0,
 									"width" : .08,
-									"height" : 0.825,
+									"height" : 0.825,"min": 0,
+									"max": 127,
 									"label": "Synth3 Vol"
 									},
 
@@ -681,7 +693,8 @@ Control.interface = {
 										"x" : .7,
 										"y" : 0,
 										"width" : .075,
-										"height" : 0.25,
+										"height" : 0.25,"min": 0,
+										"max": 127,
 										"label": "Synth3 Cutoff"
 									},
 										{
@@ -691,7 +704,8 @@ Control.interface = {
 											"x" : .7,
 											"y" : .275,
 											"width" : .075,
-											"height" : 0.25,
+											"height" : 0.25,"min": 0,
+											"max": 127,
 											"label": "Synt3 Reso"
 											},
 											{
@@ -701,7 +715,8 @@ Control.interface = {
 												"x" : .7,
 												"y" : .575,
 												"width" : .075,
-												"height" : 0.25,
+												"height" : 0.25,"min": 0,
+												"max": 127,
 												"label": "Synth3 Release"
 												},
 												
@@ -713,7 +728,8 @@ Control.interface = {
 	"x" : .8,
 	"y" : 0,
 	"width" : .08,
-	"height" : 0.825,
+	"height" : 0.825,"min": 0,
+	"max": 127,
 	"label": "Atmos Vol"
 	},
 
@@ -724,7 +740,8 @@ Control.interface = {
 		"x" : .9,
 		"y" : 0,
 		"width" : .075,
-		"height" : 0.25,
+		"height" : 0.25,"min": 0,
+		"max": 127,
 		"label": "Atmos Cutoff"
 	},
 		{
@@ -734,7 +751,8 @@ Control.interface = {
 			"x" : .9,
 			"y" : .275,
 			"width" : .075,
-			"height" : 0.25,
+			"height" : 0.25,"min": 0,
+			"max": 127,
 			"label": "Atmos Reso"
 			},
 			{
@@ -744,7 +762,8 @@ Control.interface = {
 				"x" : .9,
 				"y" : .575,
 				"width" : .075,
-				"height" : 0.25,
+				"height" : 0.25,"min": 0,
+				"max": 127,
 				"label": "Atmos Release"
 				},
 				],
