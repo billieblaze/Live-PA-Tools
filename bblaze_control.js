@@ -43,7 +43,7 @@ Control.interface = {
 "height" : .8,
 "startingValue" : 0,
 "min" : 0,
-"max" : 127,
+"max" : 1,
 "isInverted" : false,
 "isVertical" : true,
 "protocol" : "OSC",
@@ -51,32 +51,125 @@ Control.interface = {
 "label" :"Master"
 
 },
+//Ch Sliders
 {
-"name" : "EFXRet",
-"type" : "MultiSlider",
-"numberOfSliders" : 4,
-"x" : .21,
-"y" : .01,
-"width" : .25,
-"height" : .8,
-"startingValue" : 0,
+"name" : "chVol",
+"type" : "Slider",
+"address": "/mixer/level/1",
+"x" : .225,
+"y" : .0,
+"width" : .08,
+"height" : .5,
 "min" : 0,
 "max" : 1,
 "isInverted" : false,
 "isVertical" : true,
-"protocol" : "OSC",
-"address" : "/EFXRet",
-
+"label" : "Drum Dry"
 },
-// MultiTouch
+
 {
-"name" : "multi",
-"type" : "MultiTouchXY",
-"bounds" : [ .48, .01, .51, .5 ],
-"isMomentary" : false,
-"maxTouches" : 1,
+	"name" : "chVol",
+	"type" : "Button",
+	"address": "/mixer/mute/1",
+	"x" : .225,
+	"y" : .5,
+	"width" : .08,
+	"height" : .1,
+	"min" : 0,
+	"max" : 127,
+	"label" : "Mute"
+	},
+	{
+		"name" : "chVol",
+		"type" : "Button",
+		"address": "/mixer/select/1",
+		"x" : .225,
+		"y" : .6,
+		"width" : .08,
+		"height" : .1,
 
-},
+		"label" : "Select"
+		},
+{
+		
+	"name" : "chVol",
+	"type" : "Slider",
+	"address": "/mixer/level/2",
+	"x" : .325,
+	"y" : .0,
+	"width" : .08,
+	"height" : .5,
+	"min" : 0,
+	"max" : 1,
+	"isInverted" : false,
+	"isVertical" : true,
+	"label" : "Drum Wet"
+	},
+	{
+		"name" : "chVol",
+		"type" : "Button",
+		"address": "/mixer/mute/2",
+		"x" : .325,
+		"y" : .5,
+		"width" : .08,
+		"height" : .1,
+		"min" : 0,
+		"max" : 127,
+		"label" : "Mute"
+		},
+		{
+			"name" : "chVol",
+			"type" : "Button",
+			"address": "/mixer/select/2",
+			"x" : .325,
+			"y" : .6,
+			"width" : .08,
+			"height" : .1,
+			"min" : 0,
+			"max" : 127,
+
+			"label" : "Select"
+			},
+	{
+		"name" : "chVol",
+		"type" : "Slider",
+		"address": "/mixer/level/3",
+		"x" : .425,
+		"y" : .0,
+		"width" : .08,
+		"height" : .5,
+		"min" : 0,
+		"max" : 1,
+		"isInverted" : false,
+		"isVertical" : true,
+		"label" : "ESX Main"
+		},
+
+		{
+			"name" : "chVol",
+			"type" : "Button",
+			"address": "/mixer/mute/3",
+			"x" : .425,
+			"y" : .5,
+			"width" : .08,
+			"height" : .1,
+			"min" : 0,
+			"max" : 127,
+			"label" : "Mute"
+			},
+			{
+				"name" : "chVol",
+				"type" : "Button",
+				"address": "/mixer/select/3",
+				"x" : .425,
+				"y" : .6,
+				"width" : .08,
+				"height" : .1,
+				"min" : 0,
+				"max" : 127,
+				"label" : "Select"
+				},
+				
 ],
 
 
