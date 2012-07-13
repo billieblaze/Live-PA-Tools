@@ -1,6 +1,6 @@
 
 
-	var cssCode = ".widget{   border-color: #0e191b !important;  background-color: #426466 !important;  opacity: 0.8}  .slider_fill{ background-color: #333b45  !important;  }  #SelectedInterfacePage { background-size: 100%; background: url(http://www.djexq.com/img/diffuse.png)} #selectedInterface {background-color: #102828; opacity: 0.7;} ";
+	var cssCode = "  #SelectedInterfacePage { background-size: 100%; background: url(http://www.djexq.com/img/diffuse.png)} ";
 	var styleElement = document.createElement("style");
 	styleElement.type = "text/css";
 	styleElement.appendChild(document.createTextNode(cssCode));
@@ -15,13 +15,29 @@ Control.interface = {
     orientation: "landscape",
     pages: [
 [
-// master faders
+// fragment efx
+
+{
+     "name": "tabButton",
+     "type": "Button",
+     "x": .03,
+     "y": .01,
+     "width": .09,
+     "height": .05,
+     "color": "#333",
+     "min": 0,
+     "max": 1,
+     "label" : "Fragment",
+	 "address": "/composition/video/effect1/bypassed"
+	 },
+
+	 
 {
 "type" : "Slider",
 "x" : .02,
-"y" : .01,
-"width" : .1,
-"height" : .4,
+"y" : .06,
+"width" : .05,
+"height" : .35,
 "startingValue" : 0,
 "min" : 0,
 "max" : 1,
@@ -29,44 +45,14 @@ Control.interface = {
 "isVertical" : true,
 "protocol" : "OSC",
 "address" : "/composition/link1/values",
-"label" :"Fragments"
+"label" :"Frags"
 },
 {
 "type" : "Slider",
-"x" : .14,
-"y" : .01,
-"width" : .1,
-"height" : .4,
-"startingValue" : 0,
-"min" : 0,
-"max" : 1,
-"isInverted" : false,
-"isVertical" : true,
-"protocol" : "OSC",
-"address" : "/composition/link2/values",
-"label" :"Frag Distance"
-},
-{
-"type" : "Slider",
-"x" : .26,
-"y" : .01,
-"width" : .1,	
-"height" : .4,
-"startingValue" : 0,
-"min" : 0,
-"max" : 1,
-"isInverted" : false,
-"isVertical" : true,
-"protocol" : "OSC",
-"address" : "/composition/link3/values",
-"label" :"Frag Rotation"
-},
-{
-"type" : "Slider",
-"x" : .38,
-"y" : .01,
-"width" : .1,
-"height" : .4,
+"x" : .08,
+"y" : .06,
+"width" : .05,
+"height" : .35,
 "startingValue" : 0,
 "min" : 0,
 "max" : 1,
@@ -74,45 +60,48 @@ Control.interface = {
 "isVertical" : true,
 "protocol" : "OSC",
 "address" : "/composition/link4/values",
-"label" :"Frag Size"
+"label" :"Size"
 },
+
 
 {
 "type" : "Slider",
 "x" : .02,
-"y" : .42,
-"width" : .1,
-"height" : .4,
+"y" : .425,
+"width" : .05,
+"height" : .35,
 "startingValue" : 0,
 "min" : 0,
 "max" : 1,
 "isInverted" : false,
 "isVertical" : true,
 "protocol" : "OSC",
-"address" : "/composition/link5/values",
-"label" :"Mirror"
+"address" : "/composition/link2/values",
+"label" :"Distance"
 },
 {
 "type" : "Slider",
-"x" : .14,
-"y" : .42,
-"width" : .1,
-"height" : .4,
+"x" : .08,
+"y" : .425,
+"width" : .05,
+"height" : .35,
 "startingValue" : 0,
 "min" : 0,
 "max" : 1,
 "isInverted" : false,
 "isVertical" : true,
 "protocol" : "OSC",
-"address" : "/composition/link6/values",
-"label" :"RGB"
+"address" : "/composition/link3/values",
+"label" :"Rotation"
 },
+
+
 {
 "type" : "Slider",
-"x" : .26,
+"x" : .15,
 "y" : .42,
 "width" : .1,	
-"height" : .4,
+"height" : .35,
 "startingValue" : 0,
 "min" : 0,
 "max" : 1,
@@ -124,10 +113,10 @@ Control.interface = {
 },
 {
 "type" : "Slider",
-"x" : .38,
-"y" : .42,
+"x" : .15,
+"y" : .07,
 "width" : .1,
-"height" : .4,
+"height" : .35,
 "startingValue" : 0,
 "min" : 0,
 "max" : 1,
@@ -140,26 +129,13 @@ Control.interface = {
 
 
 
-	{
-     "name": "tabButton",
-     "type": "Button",
-     "x": .5,
-     "y": .15,
-     "width": .09,
-     "height": .05,
-     "color": "#333",
-     "min": 0,
-     "max": 1,
-     "label" : "Fragment",
-	 "address": "/composition/video/effect1/bypassed"
-	 },
-
+	
 
 	{
      "name": "tabButton",
      "type": "Button",
-     "x": .5,
-     "y": .25,
+     "x": .155,
+     "y": .02,
      "width": .09,
      "height": .05,
      "color": "#333",
@@ -169,34 +145,92 @@ Control.interface = {
 	 "address": "/composition/video/effect2/bypassed"
  	},
 
-		{
-     "name": "tabButton",
-     "type": "Button",
-     "x": .5,
-     "y": .35,
-     "width": .09,
-     "height": .05,
-     "color": "#333",
-     "min": 0,
-     "max": 1,
-     "label" : "Shift RGB",
-	 "address": "/composition/video/effect3/bypassed"
- 	},
+
 	{
      "name": "tabButton",
      "type": "Button",
-     "x": .5,
-     "y": .45,
+     "x": .28,
+     "y": .01,
      "width": .09,
      "height": .05,
      "color": "#333",
      "min": 0,
      "max": 1,
      "label" : "Mirror",
-	 "address": "/composition/video/effect4/bypassed"
+	 "address": "/composition/video/effect3/bypassed"
 	 },
 
 
+{
+"type" : "Slider",
+"x" : .275,
+"y" : .07,
+"width" : .1,
+"height" : .35,
+"startingValue" : 0,
+"min" : 0,
+"max" : 1,
+"isInverted" : false,
+"isVertical" : true,
+"protocol" : "OSC",
+"address" : "/composition/link5/values",
+"label" :"Mirror"
+},
+
+
+
+{
+"type" : "Slider",
+"x" : .275,
+"y" : .42,
+"width" : .1,
+"height" : .35,
+"startingValue" : 0,
+"min" : 0,
+"max" : 1,
+"isInverted" : false,
+"isVertical" : true,
+"protocol" : "OSC",
+"address" : "/composition/link6/values",
+"label" :"Mirror X"
+},
+
+{
+"type" : "Slider",
+"x" : .5,
+"y" : .01,
+"width" : .075,
+"height" : .4,
+"startingValue" : 0,
+"min" : 0,
+"max" : 1,
+"isInverted" : false,
+"isVertical" : true,
+"protocol" : "OSC",
+"address" : "/composition/video/effect4/param1/values",
+"label" :"Brightness"
+},
+
+
+
+{
+"type" : "Slider",
+"x" : .6,
+"y" : .01,
+"width" : .075,
+"height" : .4,
+"startingValue" : 0,
+"min" : 0,
+"max" : 1,
+"isInverted" : false,
+"isVertical" : true,
+"protocol" : "OSC",
+"address" : "/composition/video/effect4/param2/values",
+"label" :"Contrast"
+},
+
+
+		
 {
 "type" : "Slider",
 "x" : .7,
@@ -205,13 +239,62 @@ Control.interface = {
 "height" : .4,
 "startingValue" : 0,
 "min" : 0,
-"max" : 36,
+"max" : 1,
 "isInverted" : false,
 "isVertical" : true,
 "protocol" : "OSC",
-"address" : "/activelayer/video/mixeroption4",
-"label" :"Blend Mode"
+"address" : "/playbackcontroller/bpm",
+"label" :"Tempo"
 },
+
+{
+"type" : "Slider",
+"x" : .5,
+"y" : .5,
+"width" : .075,
+"height" : .4,
+"startingValue" : 0,
+"min" : 0,
+"max" : 1,
+"isInverted" : false,
+"isVertical" : true,
+"protocol" : "OSC",
+"address" : "/composition/video/rotatex/values",
+"label" :"Rotate X"
+},
+{
+"type" : "Slider",
+"x" : .6,
+"y" : .5,
+"width" : .075,
+"height" : .4,
+"startingValue" : 0,
+"min" : 0,
+"max" : 1,
+"isInverted" : false,
+"isVertical" : true,
+"protocol" : "OSC",
+"address" : "/composition/video/rotatey/values",
+"label" :"Rotate Y"
+},
+{
+"type" : "Slider",
+"x" : .7,
+"y" : .5,
+"width" : .075,
+"height" : .4,
+"startingValue" : 0,
+"min" : 0,
+"max" : 1,
+"isInverted" : false,
+"isVertical" : true,
+"protocol" : "OSC",
+"address" : "/composition/video/rotatez/values",
+"label" :"Rotate Z"
+},
+
+	 
+
 {
 "type" : "Slider",
 "x" : .79,
@@ -243,22 +326,6 @@ Control.interface = {
 "label" :"Transition"
 },
 
-
-{
-"type" : "Slider",
-"x" : .7,
-"y" : .5,
-"width" : .1,
-"height" : .4,
-"startingValue" : 0,
-"min" : 0,
-"max" : 1,
-"isInverted" : false,
-"isVertical" : true,
-"protocol" : "OSC",
-"address" : "/composition/video/scale/values",
-"label" :"Scale"
-},
 
 
 	{
