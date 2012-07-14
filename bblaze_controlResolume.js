@@ -259,8 +259,8 @@ Control.interface = {
 "isInverted" : false,
 "isVertical" : true,
 "protocol" : "OSC",
-"address" : "/composition/video/rotatex/values",
-"label" :"Rotate X"
+"address" : "/layer2/video/mixeroption4",
+"label" :"L1 Blend Mode"
 },
 {
 "type" : "Slider",
@@ -274,8 +274,8 @@ Control.interface = {
 "isInverted" : false,
 "isVertical" : true,
 "protocol" : "OSC",
-"address" : "/composition/video/rotatey/values",
-"label" :"Rotate Y"
+"address" : "/layer2/video/opacity/values",
+"label" :"L1 Opacity"
 },
 {
 "type" : "Slider",
@@ -289,8 +289,8 @@ Control.interface = {
 "isInverted" : false,
 "isVertical" : true,
 "protocol" : "OSC",
-"address" : "/composition/video/rotatez/values",
-"label" :"Rotate Z"
+"address" : "/layer2/video/transitionmixeroption",
+"label" :"L1 Transition"
 },
 
 	 
@@ -331,60 +331,115 @@ Control.interface = {
 	{
      "name": "tabButton",
      "type": "Button",
-     "x": .85,
+     "x": .80,
      "y": .55,
-     "width": .09,
+     "width": .05,
      "height": .05,
      "color": "#333",
      "min": 3,
      "max": 3,
      "label" : "hold",
-	 "address": "/activelayer/autopilot/action"
+	 "address": "/layer1/autopilot/action"
 	 },
 
 
 	{
      "name": "tabButton",
      "type": "Button",
-     "x": .85,
+     "x": .80,
      "y": .65,
-     "width": .09,
+     "width": .05,
      "height": .05,
      "color": "#333",
      "min": 0,
      "max": 0,
      "label" : "forward",
-	 "address": "/activelayer/autopilot/action"
+	 "address": "/layer1/autopilot/action"
  	},
 
 		{
      "name": "tabButton",
      "type": "Button",
-     "x": .85,
+     "x": .80,
      "y": .75,
-     "width": .09,
+     "width": .05,
      "height": .05,
      "color": "#333",
      "min": 2,
      "max": 2,
      "label" : "random",
-	 "address": "/activelayer/autopilot/action"
+	 "address": "/layer1/autopilot/action"
  	},
 	{
      "name": "tabButton",
      "type": "Button",
-     "x": .85,
+     "x": .80,
      "y": .85,
-     "width": .09,
+     "width": .05,
      "height": .05,
      "color": "#333",
      "min": 1,
      "max": 1,
      "label" : "back",
-	 "address": "/activelayer/autopilot/action"
+	 "address": "/layer1/autopilot/action"
 	 },
 
 
+	{
+     "name": "tabButton",
+     "type": "Button",
+     "x": .87,
+     "y": .55,
+     "width": .05,
+     "height": .05,
+     "color": "#333",
+     "min": 3,
+     "max": 3,
+     "label" : "hold",
+	 "address": "/layer2/autopilot/action"
+	 },
+
+
+	{
+     "name": "tabButton",
+     "type": "Button",
+     "x": .87,
+     "y": .65,
+     "width": .05,
+     "height": .05,
+     "color": "#333",
+     "min": 0,
+     "max": 0,
+     "label" : "forward",
+	 "address": "/layer2/autopilot/action"
+ 	},
+
+		{
+     "name": "tabButton",
+     "type": "Button",
+     "x": .87,
+     "y": .75,
+     "width": .05,
+     "height": .05,
+     "color": "#333",
+     "min": 2,
+     "max": 2,
+     "label" : "random",
+	 "address": "/layer2/autopilot/action"
+ 	},
+	{
+     "name": "tabButton",
+     "type": "Button",
+     "x": .87,
+     "y": .85,
+     "width": .05,
+     "height": .05,
+     "color": "#333",
+     "min": 1,
+     "max": 1,
+     "label" : "back",
+	 "address": "/layer2/autopilot/action"
+	 },
 ],
 
 
